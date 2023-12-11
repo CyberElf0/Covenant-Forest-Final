@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019073, y: -159}
+  m_AnchoredPosition: {x: 0.000019073, y: -250}
   m_SizeDelta: {x: 291.5327, y: 73.4947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413542721
@@ -802,7 +802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: menu
+  m_text: replay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691ef2ed7b100a4eb941dc5c721d725, type: 2}
   m_sharedMaterial: {fileID: 6987372199471688237, guid: a691ef2ed7b100a4eb941dc5c721d725, type: 2}
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 1249100517}
   - component: {fileID: 1249100516}
   m_Layer: 5
-  m_Name: boton jugar (1)
+  m_Name: boton replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,8 +916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019073, y: 293}
-  m_SizeDelta: {x: 291.5327, y: 73.4947}
+  m_AnchoredPosition: {x: 0, y: -106}
+  m_SizeDelta: {x: 401.4114, y: 73.4947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249100516
 MonoBehaviour:
@@ -1201,7 +1201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019073, y: -309}
+  m_AnchoredPosition: {x: 0, y: -379}
   m_SizeDelta: {x: 291.5327, y: 73.4947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830775317
