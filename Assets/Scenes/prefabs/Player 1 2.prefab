@@ -6029,8 +6029,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39174208, y: 1.0370613, z: 0.08912745}
-  m_Center: {x: -0.000000013916946, y: 0.6928734, z: 0.000000038965936}
+  m_Size: {x: 0.39174214, y: 1.2182474, z: 0.08912745}
+  m_Center: {x: 0.0000000062618146, y: 0.78346676, z: 0.00000010046814}
 --- !u!114 &3228842847780123874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6250,6 +6250,10 @@ MonoBehaviour:
   manaRegenPerSecond: 2
   healthText: {fileID: 8985736739847598965}
   manaText: {fileID: 4025923401590016244}
+  playerMeshes:
+  - {fileID: 4323131818620777321}
+  - {fileID: 7570236744749098988}
+  - {fileID: 5938647852782932514}
 --- !u!1 &8820283853204251363
 GameObject:
   m_ObjectHideFlags: 0
