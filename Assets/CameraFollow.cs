@@ -23,11 +23,15 @@ public class CameraFollow : MonoBehaviour
         if (target == null || Time.timeScale == 0)
             return;
 
-        // Actualiza el movimiento del mouse
+        // Actualiza el movimiento del mouse en el eje X
         mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
 
         // Ajusta el offset.y con la rueda del ratón
         offset.y -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
+        offset.y = Mathf.Clamp(offset.y, minYOffset, maxYOffset);
+
+        // Modifica el offset.y con el movimiento del mouse en el eje Y
+        offset.y -= Input.GetAxis("Mouse Y") * scrollSpeed;
         offset.y = Mathf.Clamp(offset.y, minYOffset, maxYOffset);
 
         // Centra el cursor en la pantalla

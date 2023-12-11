@@ -18,6 +18,8 @@ public class PlayerHealthAndMana : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI manaText;
 
+    public GameObject[] playerMeshes; // Array que contiene los mesh del jugador
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -31,6 +33,15 @@ public class PlayerHealthAndMana : MonoBehaviour
         {
             isInvulnerabilityActive = true;
             isInvulnerable = true;
+
+            // Desactivar los mesh del jugador
+            foreach (GameObject mesh in playerMeshes)
+            {
+                mesh.SetActive(false);
+            }
+
+            // Programar la reactivación de los mesh después de 0.5 segundos
+            Invoke("ReactivateMeshes", 0.5f);
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
@@ -54,6 +65,15 @@ public class PlayerHealthAndMana : MonoBehaviour
         }
 
         UpdateUI();
+    }
+
+    void ReactivateMeshes()
+    {
+        // Reactivar los mesh del jugador después de 0.5 segundos
+        foreach (GameObject mesh in playerMeshes)
+        {
+            mesh.SetActive(true);
+        }
     }
 
     public void TakeDamage(int damage)

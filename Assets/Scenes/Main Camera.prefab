@@ -100,4 +100,7 @@ MonoBehaviour:
   target: {fileID: 0}
   smoothSpeed: 5
   offset: {x: 0, y: 8, z: -8}
-  rotationSpeed: 2
+  rotationSpeed: 1
+  minYOffset: 1
+  maxYOffset: 5
+  scrollSpeed: 1
