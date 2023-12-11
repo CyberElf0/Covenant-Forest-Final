@@ -1668,6 +1668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9211836551415881838, guid: e517675d854f3ad489442792af26dd50, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e517675d854f3ad489442792af26dd50, type: 3}
 --- !u!4 &1629943169 stripped
@@ -2142,13 +2146,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 703258544138719914, guid: d6683b01fd15cb64a8dd8f5b260484dd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6241070323060583757, guid: d6683b01fd15cb64a8dd8f5b260484dd, type: 3}
       propertyPath: m_Name
       value: Ogro
       objectReference: {fileID: 0}
     - target: {fileID: 6241070323060583757, guid: d6683b01fd15cb64a8dd8f5b260484dd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6241070323060583767, guid: d6683b01fd15cb64a8dd8f5b260484dd, type: 3}
       propertyPath: m_RootOrder

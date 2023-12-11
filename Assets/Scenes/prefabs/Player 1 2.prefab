@@ -4225,6 +4225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7882092345960682802}
   - component: {fileID: 7703521817273688168}
+  - component: {fileID: 2012106690}
   m_Layer: 0
   m_Name: MaleCharacterPBR
   m_TagString: Untagged
@@ -4272,6 +4273,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2012106690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361416812447109000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bb6cfe3e79aa84cb0ce183ebfdb696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeInDGM: 0.1
+  materialChange:
+  - visual: {fileID: 1703918831136416267}
+    lastMaterial: {fileID: 2100000, guid: f323cced30244554986ee5e9f5dd8b67, type: 2}
+    newMaterial: {fileID: 2100000, guid: 5ce737e3163ce2541b0e5e1285bed6ff, type: 2}
+  - visual: {fileID: 8202415663420271278}
+    lastMaterial: {fileID: 2100000, guid: f323cced30244554986ee5e9f5dd8b67, type: 2}
+    newMaterial: {fileID: 2100000, guid: 5ce737e3163ce2541b0e5e1285bed6ff, type: 2}
+  - visual: {fileID: 4117741375625729164}
+    lastMaterial: {fileID: 2100000, guid: f323cced30244554986ee5e9f5dd8b67, type: 2}
+    newMaterial: {fileID: 2100000, guid: 5ce737e3163ce2541b0e5e1285bed6ff, type: 2}
+  - visual: {fileID: 2041995264536930329}
+    lastMaterial: {fileID: 2100000, guid: f323cced30244554986ee5e9f5dd8b67, type: 2}
+    newMaterial: {fileID: 2100000, guid: 5ce737e3163ce2541b0e5e1285bed6ff, type: 2}
+  - visual: {fileID: 8133453096944823238}
+    lastMaterial: {fileID: 2100000, guid: f323cced30244554986ee5e9f5dd8b67, type: 2}
+    newMaterial: {fileID: 2100000, guid: 5ce737e3163ce2541b0e5e1285bed6ff, type: 2}
 --- !u!1 &7377027602932971329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,7 +5978,7 @@ GameObject:
   - component: {fileID: 3228842847780123874}
   m_Layer: 0
   m_Name: OHS03
-  m_TagString: arma
+  m_TagString: Armaaaaa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6027,7 +6057,7 @@ BoxCollider:
   m_GameObject: {fileID: 8346540730788779144}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.39174214, y: 1.2182474, z: 0.08912745}
   m_Center: {x: 0.0000000062618146, y: 0.78346676, z: 0.00000010046814}
@@ -6245,7 +6275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  maxMana: 100
+  maxMana: 0
   manaCostPerSecond: 10
   manaRegenPerSecond: 2
   healthText: {fileID: 8985736739847598965}

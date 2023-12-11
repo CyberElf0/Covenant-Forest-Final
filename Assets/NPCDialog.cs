@@ -13,6 +13,7 @@ public class NPCDialog : MonoBehaviour
     public string nextSceneName = "NombreDeLaSiguienteEscena"; // Nombre editable de la próxima escena
 
     private bool isPlayerInRange = false;
+    private bool isInDialog;
 
     void Update()
     {
@@ -20,7 +21,7 @@ public class NPCDialog : MonoBehaviour
         if (isPlayerInRange)
         {
             // Verifica si el jugador presiona la tecla "E"
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F) && !isInDialog)
             {
                 StartCoroutine(ShowDialogLetterByLetter());
             }
@@ -30,6 +31,7 @@ public class NPCDialog : MonoBehaviour
     // Método para mostrar el cuadro de texto en la UI letra por letra
     IEnumerator ShowDialogLetterByLetter()
     {
+        isInDialog = true;
         textUI.SetActive(true);
         dialogUI.text = "";
 
@@ -49,8 +51,10 @@ public class NPCDialog : MonoBehaviour
         // Desactiva el cuadro de texto después de la espera
         textUI.SetActive(false);
 
+        isInDialog = false;
+
         // Cambia a la siguiente escena
-        ChangeScene();
+        //ChangeScene();
     }
 
     // Método para cambiar a la siguiente escena
