@@ -1133,16 +1133,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1271476363 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5938647852782932514, guid: e517675d854f3ad489442792af26dd50, type: 3}
-  m_PrefabInstance: {fileID: 1629943168}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1272675319 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7570236744749098988, guid: e517675d854f3ad489442792af26dd50, type: 3}
-  m_PrefabInstance: {fileID: 1629943168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1353755672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,11 +1440,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1523983476 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4323131818620777321, guid: e517675d854f3ad489442792af26dd50, type: 3}
-  m_PrefabInstance: {fileID: 1629943168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1543228406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,30 +1565,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 845779935486681145, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: maxMana
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 845779935486681145, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: playerMeshes.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 845779935486681145, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: playerMeshes.Array.data[0]
-      value: 
-      objectReference: {fileID: 1523983476}
-    - target: {fileID: 845779935486681145, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: playerMeshes.Array.data[1]
-      value: 
-      objectReference: {fileID: 1272675319}
-    - target: {fileID: 845779935486681145, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: playerMeshes.Array.data[2]
-      value: 
-      objectReference: {fileID: 1271476363}
-    - target: {fileID: 845779935486681145, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: playerMeshes.Array.data[3]
-      value: 
-      objectReference: {fileID: 1272675319}
     - target: {fileID: 931128250758842377, guid: e517675d854f3ad489442792af26dd50, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1648,29 +1609,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1703918831136416267, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458737032060787257, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703521817273688168, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202415663420271278, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8554845668942598951, guid: e517675d854f3ad489442792af26dd50, type: 3}
       propertyPath: m_Name
       value: Player 1 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9211836551415881838, guid: e517675d854f3ad489442792af26dd50, type: 3}
-      propertyPath: m_Drag
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e517675d854f3ad489442792af26dd50, type: 3}
@@ -2077,14 +2018,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5027949284878653292, guid: 745e72480a8482843815ba5b9b6479e3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5027949284878653292, guid: 745e72480a8482843815ba5b9b6479e3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9197684186904428080, guid: 745e72480a8482843815ba5b9b6479e3, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2132,10 +2065,6 @@ PrefabInstance:
     - target: {fileID: 9197684186904428091, guid: 745e72480a8482843815ba5b9b6479e3, type: 3}
       propertyPath: m_Name
       value: cofre
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197684186904428091, guid: 745e72480a8482843815ba5b9b6479e3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 745e72480a8482843815ba5b9b6479e3, type: 3}
