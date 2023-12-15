@@ -19,6 +19,7 @@ public class PlayerHealthAndMana : MonoBehaviour
     public TextMeshProUGUI manaText;
 
     public GameObject[] playerMeshes; // Array que contiene los mesh del jugador
+    public GameObject invulnerabilityEffect; // GameObject que se activará durante la invulnerabilidad
 
     private void Start()
     {
@@ -34,6 +35,12 @@ public class PlayerHealthAndMana : MonoBehaviour
             isInvulnerabilityActive = true;
             isInvulnerable = true;
 
+            // Activar el efecto de invulnerabilidad
+            if (invulnerabilityEffect != null)
+            {
+                invulnerabilityEffect.SetActive(true);
+            }
+
             // Desactivar los mesh del jugador
             foreach (GameObject mesh in playerMeshes)
             {
@@ -44,15 +51,16 @@ public class PlayerHealthAndMana : MonoBehaviour
             Invoke("ReactivateMeshes", 0.5f);
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || currentMana < manaCostPerSecond)
         {
             isInvulnerabilityActive = false;
             isInvulnerable = false;
-        }
-        if (currentMana < manaCostPerSecond)
-        {
-            isInvulnerabilityActive = false;
-            isInvulnerable = false;
+
+            // Desactivar el efecto de invulnerabilidad
+            if (invulnerabilityEffect != null)
+            {
+                invulnerabilityEffect.SetActive(false);
+            }
         }
 
         if (isInvulnerabilityActive)
@@ -137,8 +145,5 @@ public class PlayerHealthAndMana : MonoBehaviour
         Cursor.visible = true;
         // Cambiar "NombreDeTuEscena" con el nombre de la escena a la que deseas saltar.
         SceneManager.LoadScene("gameOver");
-
-        
-        
     }
 }
